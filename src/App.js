@@ -12,13 +12,13 @@ const App = () => {
 
     return (
         <div className='app-wrapper'>
-            <Header />
-            <Navbar />
-            <Profile />
-            <Messages />
-            <News />
-            <Music />
-            <Settings />
+            <Header/>
+            <Navbar/>
+            <Profile/>
+            {/*<Messages />*/}
+            {/*<News />*/}
+            {/*<Music />*/}
+            {/*<Settings />*/}
         </div>
     );
 }
