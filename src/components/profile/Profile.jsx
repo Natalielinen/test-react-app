@@ -4,7 +4,7 @@ import MyPosts from "./myposts/MyPosts";
 
 const Profile = () => {
     return (
-        <div className={classes.content}>
+        <div>
             <img src='https://invigor.by/assets/images/resources/130/0415-a.jpg'/>
             <MyPosts />
         </div>
