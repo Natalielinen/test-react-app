@@ -2,3 +2,12 @@
     grid-area: n;
     background-color: plum;
 }
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a.active {
+    color: darkmagenta;
+}
