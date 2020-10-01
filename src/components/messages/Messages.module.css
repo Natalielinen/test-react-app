@@ -5,3 +5,14 @@
 .items {
     margin-left: 5%;
 }
+.dialogs a {
+    color: black;
+    text-decoration: none;
+}
+.dialogs a:hover {
+    color: maroon;
+    text-decoration: underline;
+}
+.dialogs a.active {
+    color: darkmagenta;
+}

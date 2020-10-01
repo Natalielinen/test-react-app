@@ -7,7 +7,10 @@
     color: black;
     text-decoration: none;
 }
-
+.navbar a:hover {
+    color: maroon;
+    text-decoration: underline;
+}
 .navbar a.active {
     color: darkmagenta;
 }
