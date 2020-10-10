@@ -20,6 +20,11 @@ let state = {
             {id: 5, name: 'Василий'},
             {id: 6, name: 'Джон'},
             {id: 7, name: 'Карась'}
+        ],
+        sidebar: [
+            {id: 1, name: 'Гарик'},
+            {id: 3, name: 'Белка'},
+            {id: 5, name: 'Василий'}
         ]
     }
 
