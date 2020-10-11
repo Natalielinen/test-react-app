@@ -1,7 +1,9 @@
 .navbar {
     grid-area: n;
-    background-color: darkgreen;
+    background-color: #c894c9;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: #a694c9 4px 4px 2px;
 }
 
 .navbar a {
@@ -9,7 +11,7 @@
     text-decoration: none;
 }
 .navbar a:hover {
-    color: maroon;
+    color: #3b003b;
     text-decoration: underline;
 }
 .navbar a.active {
@@ -19,6 +21,7 @@
 .navbar .sidebar {
     display: inline-block;
     padding: 3px;
+    font-family: Chilanka-Regular;
 }
 
 .sidebar img {

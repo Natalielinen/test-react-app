@@ -16,3 +16,22 @@
 .dialogs a.active {
     color: darkmagenta;
 }
+
+.items button {
+    background-color: #c894c9;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: #3b003b;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.items button:hover {
+    box-shadow: #3b003b 4px 4px 2px;
+}
+
+.items button:active {
+    outline: none;
+}

@@ -1,9 +1,11 @@
 .item img {
     width: 50px;
-    border: 4px solid maroon;
     border-radius: 50%;
+}
+.item {
+    padding: 10px;
 }
 
 .item:nth-child(2n){
-    background-color: coral;
+    background-color: #c894c9;
 }
