@@ -1,14 +1,10 @@
-import React from 'react';
-import './index.css';
+
 import * as serviceWorker from './serviceWorker';
 import {rerenderEntireTree} from "./render";
 import state from "./components/redux/state";
 
 
-
-
 rerenderEntireTree(state);
-
 
 
 // If you want your app to work offline and load faster, you can change
