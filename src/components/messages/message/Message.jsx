@@ -6,7 +6,6 @@ const Message = (props) => {
 
     return (
         <div className={classes.item}>{props.text}
-        <div>Some textttyui</div>
         </div>
     )
 }

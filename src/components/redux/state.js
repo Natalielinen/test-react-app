@@ -7,6 +7,7 @@ let state = {
             {id: 2, text: 'This is my first react app.', likesCount: '20'},
             {id: 3, text: 'I understood props!!!', likesCount: '200'},
         ],
+        newPostText: 'it-kamasurta'
     },
     dialogsPage: {
         messagesData: [
@@ -39,23 +40,29 @@ let state = {
 
 };
 
-export let addPost = (postMessage) => {
+export let addPost = () => {
     let newPost = {
         id: 5,
-        text: postMessage,
+        text: state.profilePage.newPostText,
         likesCount: '2'
 
     };
     state.profilePage.postData.push(newPost);
+    state.profilePage.newPostText= '';
     rerenderEntireTree(state);
+};
 
+export let updateNewPostText = (newText) => {
+
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
 };
 
 export let addMessage = (userMessage) => {
     let newMessage = {
         id: 5,
         text: userMessage
-    }
+    };
     state.dialogsPage.messagesData.push(newMessage);
     rerenderEntireTree(state);
 };
