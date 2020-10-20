@@ -12,6 +12,7 @@
     font-weight: bold;
     border-radius: 8px;
 }
+
 .posts button:hover {
     box-shadow: #3b003b 4px 4px 2px;
 }

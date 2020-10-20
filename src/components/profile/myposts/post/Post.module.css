@@ -2,10 +2,11 @@
     width: 50px;
     border-radius: 50%;
 }
+
 .item {
     padding: 10px;
 }
 
-.item:nth-child(2n){
+.item:nth-child(2n) {
     background-color: #c894c9;
 }

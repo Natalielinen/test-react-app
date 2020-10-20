@@ -23,21 +23,21 @@ const Menu = (props) => {
         </div>
     )
 }
-const Sidebar = (props) => {
+/*const Sidebar = (props) => {
     return (
         <div className={classes.sidebar}>
             <p><img src={props.img}/></p>
             <p>{props.name}</p>
         </div>
     )
-}
+}*/
 
 const Navbar = (props) => {
-    let sidebarFriends = props.state.friends.map(f => <Sidebar name={f.name} img={f.img}/>)
+    // let sidebarFriends = props.store.friends.map(f => <Sidebar name={f.name} img={f.img}/>)
     return (
         <div className={classes.navbar}>
             <Menu/>
-            {sidebarFriends}
+            {/*{sidebarFriends}*/}
         </div>
     )
 }
