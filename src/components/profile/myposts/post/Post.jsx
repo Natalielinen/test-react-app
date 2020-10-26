@@ -6,8 +6,8 @@ const Post = (props) => {
         <div className={classes.item}>
             <p>
                 <img src='https://i.pinimg.com/originals/47/3a/65/473a65fa8aa6a0be5c91757806b13349.jpg'/>
-                {props.message}
-                <p><strong>Likes: {props.likesCount}</strong></p>
+                {props.message}<br/>
+                <strong>Likes: {props.likesCount}</strong>
             </p>
         </div>
     )

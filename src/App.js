@@ -7,8 +7,8 @@ import News from "./components/news/News";
 import Music from "./components/music/Music";
 import Settings from "./components/settings/Settings";
 import {Route} from "react-router-dom"
-import store from "./components/redux/store";
 import DialogsContainer from './components/messages/DialogsContainer';
+import UsersContainer from './components/users/UsersContainer';
 
 
 const App = (props) => {
@@ -19,13 +19,11 @@ const App = (props) => {
             <Header/>
             <Navbar />
             <div className='content'>
-                <Route path='/profile' render={() => <Profile
-                    store = {props.store}/>}/>
-                <Route path='/dialogs' render={() => <DialogsContainer
-                    store = {props.store}
-                    dispatch={props.dispatch}/>}/>
+                <Route path='/profile' render={() => <Profile/>}/>
+                <Route path='/dialogs' render={() => <DialogsContainer/>}/>
                 <Route path='/news' render={() => <News/>}/>
                 <Route path='/music' render={() => <Music/>}/>
+                <Route path='/users' render={() => <UsersContainer />}/>
                 <Route path='/settings' render={() => <Settings/>}/>
             </div>
         </div>
