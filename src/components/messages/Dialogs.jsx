@@ -16,8 +16,8 @@ const Dialogs = (props) => {
     let newMessageBody = state.newMessageBody;
 
 
-    let newMessage = () => {
-        props.newMessage();
+    let sendMessage = () => {
+        props.sendMessage();
     };
 
     let onNewMessageChange = (e) => {
@@ -37,7 +37,7 @@ const Dialogs = (props) => {
                     value={newMessageBody}
                     onChange={onNewMessageChange}/></div>
                 <div>
-                    <button onClick={newMessage}>Send</button>
+                    <button onClick={sendMessage}>Send</button>
                 </div>
             </div>
         </div>
