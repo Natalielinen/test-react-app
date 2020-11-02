@@ -25,7 +25,9 @@ const Users = (props) => {
                     props.users.map(u=><div key = {u.id}>
                         <span>
                             <div>
-                                <NavLink to = {'/profile'}><img src={u.photos.small != null ? u.photos.small : userPhoto } alt=""/></NavLink>
+                                <NavLink to = {'/profile/' + u.id }>
+                                    <img src={u.photos.small != null ? u.photos.small : userPhoto } alt=""/>
+                                    </NavLink>
                             </div>
                             <div>
                                 {u.followed 
