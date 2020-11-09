@@ -3,6 +3,7 @@ import Loader from "../../common/loader/Loader";
 import classes from "./ProfileInfo.module.css";
 
 
+
 const ProfileInfo = (props) => {
 
     if(!props.profile) {
