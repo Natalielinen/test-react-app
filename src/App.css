@@ -13,9 +13,8 @@
 
 .content {
     grid-area: c;
-    background-color: #d4c4e0;
-    border-radius: 5px;
-    box-shadow: #a694c9 4px 4px 2px;
+    background-color: #c0c0c0;
+    
 }
 
 .content img {

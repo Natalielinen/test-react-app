@@ -6,7 +6,3 @@
 .item {
     padding: 10px;
 }
-
-.item:nth-child(2n) {
-    background-color: #c894c9;
-}

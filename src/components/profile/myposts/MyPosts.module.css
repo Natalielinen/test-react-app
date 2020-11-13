@@ -3,18 +3,17 @@
 }
 
 .posts button {
-    background-color: #c894c9;
+    background-color: #CD853F;
     border: none;
     outline: none;
     padding: 10px 20px;
-    color: #3b003b;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 8px;
 }
 
 .posts button:hover {
-    box-shadow: #3b003b 4px 4px 2px;
+    box-shadow: #000 4px 4px 2px;
 }
 
 .posts button:active {

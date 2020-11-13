@@ -1,29 +1,26 @@
 .navbar {
     grid-area: n;
-    background-color: #c894c9;
+    background: linear-gradient(to top, #c0c0c0, #000);
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: #a694c9 4px 4px 2px;
 }
 
 .navbar a {
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #3b003b;
+    color: #8B4513;
     text-decoration: underline;
 }
 
 .navbar a.active {
-    color: darkmagenta;
+    color: #CD853F;
 }
 
 .navbar .sidebar {
     display: inline-block;
     padding: 3px;
-    font-family: Chilanka-Regular;
 }
 
 .sidebar img {
