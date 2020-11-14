@@ -13,28 +13,10 @@
 }
 
 .dialogs a:hover {
-    color: #8B4513;
+    color: #B22222;
     text-decoration: underline;
 }
 
 .dialogs a.active {
-    color: #CD853F;
-}
-
-.items button {
-    background-color: #CD853F;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 8px;
-}
-
-.items button:hover {
-    box-shadow: #000 4px 4px 2px;
-}
-
-.items button:active {
-    outline: none;
+    color: #8B0000;
 }

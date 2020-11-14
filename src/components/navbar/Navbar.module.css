@@ -1,21 +1,21 @@
 .navbar {
     grid-area: n;
-    background: linear-gradient(to top, #c0c0c0, #000);
+    background: linear-gradient(to top, #c0c0c0, #3CB371);
     padding: 10px;
 }
 
 .navbar a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #8B4513;
+    color: #B22222;
     text-decoration: underline;
 }
 
 .navbar a.active {
-    color: #CD853F;
+    color: #8B0000;
 }
 
 .navbar .sidebar {

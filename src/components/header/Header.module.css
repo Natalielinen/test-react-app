@@ -1,6 +1,6 @@
 .header {
     grid-area: h;
-    background: linear-gradient(to left, #c0c0c0, #000);
+    background: linear-gradient(to left, #c0c0c0, #3CB371);
     padding: 3px 5px; 
 }
 

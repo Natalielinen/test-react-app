@@ -2,20 +2,3 @@
     padding: 10px;
 }
 
-.posts button {
-    background-color: #CD853F;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 8px;
-}
-
-.posts button:hover {
-    box-shadow: #000 4px 4px 2px;
-}
-
-.posts button:active {
-    outline: none;
-}

@@ -1,0 +1,39 @@
+.formContainer {
+    border:solid 5px #3CB371;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 1%;
+    background: linear-gradient(to top, #fff, #F5F5F5);
+    
+}
+.loginForm div{
+    margin: 4%;
+}
+
+.formContainer {
+    text-align: center;
+}
+
+.loginForm div input[type = 'text']{
+    padding: 2%;
+    width: 250px;
+}
+
+.loginForm div input[type = 'password']{
+    padding: 2%;
+    width: 250px;
+}
+
+.loginForm .formText:focus{
+   outline: 1px solid #3CB371;
+}
+
+.loginForm .formPassword:focus{
+    outline: 1px solid #3CB371;
+ }
+
+ 
+
+

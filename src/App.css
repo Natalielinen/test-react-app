@@ -13,7 +13,7 @@
 
 .content {
     grid-area: c;
-    background-color: #c0c0c0;
+    background: linear-gradient(to top, #fff, #F5F5F5);
     
 }
 
@@ -21,6 +21,23 @@
     width: 100%;
 }
 
+.greenBtn {
+    background: linear-gradient(to top, #c0c0c0, #3CB371);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+
+}
+.greenBtn:hover {
+    box-shadow: #000 4px 4px 2px;
+}
+
+.greenBtn:active {
+    outline: none;
+}
 
 
 

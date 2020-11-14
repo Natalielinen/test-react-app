@@ -42,7 +42,7 @@ const Dialogs = (props) => {
                     value={newMessageBody}
                     onChange={onNewMessageChange}/></div>
                 <div>
-                    <button onClick={sendMessage}>Send</button>
+                    <button className = "greenBtn" onClick={sendMessage}>Send</button>
                 </div>
             </div>
         </div>
