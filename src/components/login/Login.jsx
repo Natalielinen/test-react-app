@@ -10,8 +10,10 @@ import { Redirect } from 'react-router-dom';
 const LoginForm = (props) => {
     return (
 <div >
+    
     <form onSubmit = {props.handleSubmit} className = {classes.loginForm} >
         <div>
+        
             <Field 
         component = {Input} 
         name = {'email'} 
@@ -30,13 +32,14 @@ const LoginForm = (props) => {
         validate = {[required]}/>
         </div>
 
+        <div >
+            <Field component = {Input} name = {'rememberMe'} type={'checkbox'} className = {classes.formCheckbox} /><span>Remember me</span></div> 
         <div>
-            <Field 
-        component = {Input} 
-        name = {'rememberMe'} 
-        type={'checkbox'} 
-        className = {classes.formCheckbox}/> Remember me</div>
-        <div><button className = "greenBtn">Login</button></div>
+        {props.error && <div className ={classes.someError}>
+            {props.error}
+    
+    </div>}
+            <button className = "greenBtn">Login</button></div>
     </form>
 </div>
     )
