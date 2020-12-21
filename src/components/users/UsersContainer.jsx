@@ -10,6 +10,12 @@ import {follow,
 import Loader from '../common/loader/Loader';
 import { withAuthRedirect } from '../../hoc/withAuthRedirect';
 import { compose } from 'redux';
+import {getAllUsersSelector, 
+        getPageSize, 
+        getTotalUsersCount,
+        getCurrentPage,
+        getIsFetching,
+        getFollowingInProgress} from '../redux/usersSelectors'
 
 
 class UsersContainer extends React.Component{
@@ -41,14 +47,27 @@ render () {
 }
 
 }
+// let mapStateToProps = (state) => {
+//     return {
+//         users: state.usersPage.users,
+//         pageSize: state.usersPage.pageSize,
+//         totalUsersCount: state.usersPage.totalUsersCount,
+//         currentPage: state.usersPage.currentPage,
+//         isFetching: state.usersPage.isFetching,
+//         followingInProgress: state.usersPage.followingInProgress
+//     }
+
+// };
+
 let mapStateToProps = (state) => {
     return {
-        users: state.usersPage.users,
-        pageSize: state.usersPage.pageSize,
-        totalUsersCount: state.usersPage.totalUsersCount,
-        currentPage: state.usersPage.currentPage,
-        isFetching: state.usersPage.isFetching,
-        followingInProgress: state.usersPage.followingInProgress
+        // users: getAllUsers(state),
+        users: getAllUsersSelector(state),
+        pageSize: getPageSize(state),
+        totalUsersCount: getTotalUsersCount(state),
+        currentPage: getCurrentPage(state),
+        isFetching: getIsFetching(state),
+        followingInProgress: getFollowingInProgress(state)
     }
 
 };
@@ -62,5 +81,5 @@ let mapStateToProps = (state) => {
     export default compose(
         connect 
     (mapStateToProps, {follow, unfollow, setCurrentPage, toggleFollowingProgress, getUsers}),
-        withAuthRedirect
+        // withAuthRedirect
     )(UsersContainer)

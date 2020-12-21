@@ -5,16 +5,26 @@ import Navbar from "./components/navbar/Navbar";
 import News from "./components/news/News";
 import Music from "./components/music/Music";
 import Settings from "./components/settings/Settings";
-import {Route} from "react-router-dom"
+import {Route, withRouter} from "react-router-dom"
 import DialogsContainer from './components/messages/DialogsContainer';
 import UsersContainer from './components/users/UsersContainer';
 import ProfileContainer from './components/profile/ProfileContainer';
 import Login from './components/login/Login';
+import { connect } from 'react-redux';
+import { initializeApp } from './components/redux/appReducer';
+import Loader from './components/common/loader/Loader';
 
 
-const App = (props) => {
 
-    return (
+class App extends React.Component {
+    componentDidMount () {
+        this.props.initializeApp(); 
+    }
+    render () {
+        if(!this.props.initialized){
+        return <Loader />}
+
+    return  (
 
         <div className='app-wrapper'>
             <HeaderContainer/>
@@ -32,5 +42,11 @@ const App = (props) => {
 
     );
 }
+}
 
-export default App;
+const mapStateToProps =(state) => ({
+    initialized: state.app.initialized
+
+})
+
+export default withRouter(  connect(mapStateToProps, {initializeApp })(App));

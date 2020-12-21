@@ -9,6 +9,7 @@ const maxLength10 = maxLengthCreator(10);
 
 
 const MyPosts = (props) => {
+    console.log('RENDER');
 
 
     let postsElements = props.postData.map(post => <Post message={post.text} key = {post.id} likesCount={post.likesCount}/>)
