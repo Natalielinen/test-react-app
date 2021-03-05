@@ -14,9 +14,9 @@ const ProfileInfo = (props) => {
   
     return (
         <div className={classes.info}>
-            {/* <img src='https://invigor.by/assets/images/resources/130/0415-a.jpg'/> */}
+             <img src='https://invigor.by/assets/images/resources/130/0415-a.jpg'/>
             <div className={classes.description}>
-                {/* <img style = { {width: '50px' } } src= {props.profile.photos.small} alt="123"/> */}
+                 <img style = { {width: '50px' } } src= {props.profile.photos.small} alt="123"/>
                 <ProfileStatusWithHooks status = {props.status} updateStatus = {props.updateStatus}/>
                 <div>
           {props.profile.aboutMe 
