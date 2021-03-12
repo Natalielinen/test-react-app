@@ -3,9 +3,9 @@ import loader from './../../../assets/images/loader.gif';
 
 const Loader = (props) => {
     return (
-     <div>
-         <img  src = {loader} alt = "Loader" style = { {width: '50px' } } />
-     </div>
+        <div>
+            <img src={loader} alt="Loader" style={{width: '50px'}}/>
+        </div>
     )
 }
 

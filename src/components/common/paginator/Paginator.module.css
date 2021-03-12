@@ -1,0 +1,34 @@
+.selectedPage {
+    font-weight: bold;
+
+}
+
+.pages {
+    cursor: pointer;
+}
+
+.pages:hover {
+    color: #B22222;
+    text-decoration: underline;
+}
+
+.btnToggle {
+    background: linear-gradient(to top, #b1b1b1, #3CB371);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btnToggle:hover {
+    box-shadow: #000 4px 4px 2px;
+}
+
+.paginator {
+    margin: 0 auto;
+    width: 300px;
+}

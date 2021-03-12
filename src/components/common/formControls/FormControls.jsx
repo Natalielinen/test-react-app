@@ -1,33 +1,39 @@
 import React from 'react';
 import classes from './FormControls.module.css';
+import {required} from "../../../utilites/validators/validators";
+import {Field} from "redux-form";
 
+const FormControl = ({input, meta: {touched, error}, children}) => {
 
-export const Texarea = ({input, meta, ...props}) => {
+    const showError = touched && error;
 
-    const showError = meta.touched && meta.error;
-    
     return (
-        <div className ={classes.formControl +" "+ (showError ? classes.error : " ")}>
+        <div className={classes.formControl + " " + (showError ? classes.error : " ")}>
             <div>
-            <textarea  {...input} {...props}/>
+                {children}
             </div>
-            {showError && <span>{meta.error}</span>}
+            {showError && <span>{error}</span>}
 
-            </div>
+        </div>
     )
 }
-
-export const Input = ({input, meta, ...props}) => {
-
-    const showError = meta.touched && meta.error;
-    
-    return (
-        <div className ={classes.formControl +" "+ (showError ? classes.error : " ")}>
-            <div>
-            <input  {...input} {...props}/>
-            </div>
-            {showError && <span>{meta.error}</span>}
-
-            </div>
-    )
+export const Textarea = (props) => {
+    const {input, meta, child, ...restProps} = props;
+    return <FormControl {...props}><textarea {...input} {...restProps} /></FormControl>
 }
+
+export const Input = (props) => {
+    const {input, meta, child, ...restProps} = props;
+    return <FormControl {...props}><input {...input} {...restProps} /></FormControl>
+}
+
+export const createField = (placeholder, name, component, validator, type, className) =>
+    (<div>
+        <Field
+            component={component}
+            name={name}
+            placeholder={placeholder}
+            type={type}
+            className={className}
+            validate={validator}/>
+    </div>)

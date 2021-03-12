@@ -29,6 +29,7 @@
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 8px;
+    cursor: pointer;
 
 }
 .greenBtn:hover {
